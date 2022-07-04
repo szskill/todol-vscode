@@ -1,0 +1,42 @@
+{
+  "name": "todol",
+  "displayName": "TodoL",
+  "description": "Language support for TodoL (github.com/szskill/todol)",
+  "version": "0.0.1",
+  "publisher": "szskill",
+  "license": "MIT",
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "todo",
+    "todo language",
+    "todol",
+    "todo file"
+  ],
+  "engines": {
+    "vscode": "^1.68.0"
+  },
+  "contributes": {
+    "languages": [
+      {
+        "id": "todol",
+        "aliases": [
+          "TodoL",
+          "todol"
+        ],
+        "extensions": [
+          "TODO"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "todol",
+        "scopeName": "TODO",
+        "path": "./syntaxes/todol.tmLanguage.json"
+      }
+    ]
+  }
+}
